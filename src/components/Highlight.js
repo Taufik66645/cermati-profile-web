@@ -4,7 +4,7 @@ export class Highlight extends Component {
   render() {
     return (
       <div className="highlight">
-        <span className="help">
+        <div className="help">
           <h1>How can I Help You ?</h1>
           <p>
             Our work targeted, best practices outcomes social innovation
@@ -14,7 +14,63 @@ export class Highlight extends Component {
             Ventur Philanthropy, revolutianory inclusive policymaker relief.
           </p>
           <p>User-centered program area scale.</p>
-        </span>
+        </div>
+        <div className="grid">
+          <div className="card">
+            <h3>Consult</h3>
+            <p>
+              Co-create, design thinking; strengthen infrastructure resist
+              granular. Revolution circular, movements or framework social
+              impact low-hanging fruit. Save the world compelling revolutionary
+              progress.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Design</h3>
+            <p>
+              Policymaker collaborates collective impact humanitarian shared
+              value vocabulary inspire issue outcomes agile. Overcome injustice
+              deep dive agile issue outcomes vibrant boots on the ground
+              sustainable.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Develop</h3>
+            <p>
+              Revolutionary circular, movements a or impact framework social
+              impact low- hanging. Save the compelling revolutionary inspire
+              progress. Collective impacts and challenges for opportunities of
+              thought provoking.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Marketing</h3>
+            <p>
+              Peaceful; vibrant paradigm, collaborative cities. Shared
+              vocabulary agile, replicable, effective altruism youth. Mobilize
+              commitment to overcome injustice resilient, uplift social
+              transparent effective.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Manage</h3>
+            <p>
+              Change-makers innovation or shared unit of analysis. Overcome
+              injustice outcomes strategize vibrant boots on the ground
+              sustainable. Optimism, effective altruism invest optimism
+              corporate social.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Evolve</h3>
+            <p>
+              Activate catalyze and impact contextualize humanitarian. Unit of
+              analysis overcome injustice storytelling altruism. Thought
+              leadership mass incarceration. Outcomes big data, fairness, social
+              game-changer. .
+            </p>
+          </div>
+        </div>
       </div>
     );
   }
