@@ -17,8 +17,18 @@ export class PageHeader extends Component {
           <p>
             By Accessing and using this website, you acknowledge that you have
             read <br />
-            and understand Our Cookie Policy, Privacy Policy and out Term of
-            Service
+            and understand Our{" "}
+            <a href="https://www.google.com/" className="link">
+              Cookie Policy
+            </a>{" "}
+            ,{" "}
+            <a href="https://www.google.com/" className="link">
+              Privacy Policy
+            </a>{" "}
+            and our{" "}
+            <a href="https://www.google.com/" className="link">
+              Term of Service
+            </a>
           </p>
           <button className="btn-cookie" onClick={this.toggleCookie()}>
             Got It
