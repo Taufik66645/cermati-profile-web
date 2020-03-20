@@ -2,38 +2,14 @@ import React, { Component } from "react";
 import logo from "../assets/y-logo-white.png";
 
 export class PageHeader extends Component {
-  state = {
-    notification: true
-  };
 
-  toggleCookie() {
-    this.notification = false;
-  }
+contact = () =>{
+  prompt ('Enter your Email Address, We will contact you soon')
+}
 
   render() {
     return (
       <div>
-        <span className="cookie">
-          <p>
-            By Accessing and using this website, you acknowledge that you have
-            read <br />
-            and understand Our{" "}
-            <a href="https://www.google.com/" className="link">
-              Cookie Policy
-            </a>{" "}
-            ,{" "}
-            <a href="https://www.google.com/" className="link">
-              Privacy Policy
-            </a>{" "}
-            and our{" "}
-            <a href="https://www.google.com/" className="link">
-              Term of Service
-            </a>
-          </p>
-          <button className="btn-cookie" onClick={this.toggleCookie()}>
-            Got It
-          </button>
-        </span>
         <div className="page-header">
           <img src={logo} alt="logo" className="logo" />
           <span className="hello">
@@ -43,7 +19,7 @@ export class PageHeader extends Component {
             </h1>
             <p>Have Something Great in mind ? Feel free to contact me.</p>
             <p>I'll Help you to make it happen</p>
-            <button className="btn">Lets Make Contact</button>
+            <button className="btn" onClick={this.contact}>Lets Make Contact</button>
           </span>
         </div>
       </div>
