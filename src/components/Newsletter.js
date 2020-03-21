@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class newsletter extends Component {
+export class Newsletter extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,11 +42,11 @@ export class newsletter extends Component {
   render() {
     return (
       <div>
-        <newsletter>
+        <Newsletter>
           {this.state.newsletter === true && this.newsletterSec()}
-        </newsletter>
+        </Newsletter>
       </div>
     );
   }
 }
-export default newsletter;
+export default Newsletter;

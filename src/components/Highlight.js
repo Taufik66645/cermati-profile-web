@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Footer from "./Footer";
+import Newsletter from "./Newsletter";
 
 export class Highlight extends Component {
   render() {
@@ -71,6 +73,8 @@ export class Highlight extends Component {
             </p>
           </div>
         </div>
+        <Newsletter />
+        <Footer />
       </div>
     );
   }

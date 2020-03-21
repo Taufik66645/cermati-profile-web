@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class cookieSection extends Component {
+export class CookieSection extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,8 +15,8 @@ export class cookieSection extends Component {
 
   cookieSection = () => {
     return (
-      <span className="cookie">
-        <p>
+      <div className="cookie">
+        <p className="cookie-p">
           By Accessing and using this website, you acknowledge that you have
           read <br />
           and understand Our{" "}
@@ -32,21 +32,23 @@ export class cookieSection extends Component {
             Term of Service
           </a>
         </p>
-        <button className="btn-cookie" onClick={this.btnHide}>
-          Hide
-        </button>
-      </span>
+        <span>
+          <button className="btn-cookie" onClick={this.btnHide}>
+            Got it
+          </button>
+        </span>
+      </div>
     );
   };
   render() {
     return (
       <div>
-        <cookieSection>
+        <CookieSection>
           {this.state.cookie === true && this.cookieSection()}
-        </cookieSection>
+        </CookieSection>
       </div>
     );
   }
 }
 
-export default cookieSection;
+export default CookieSection;
