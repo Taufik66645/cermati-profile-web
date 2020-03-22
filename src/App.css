@@ -159,7 +159,10 @@ body {
 @media (min-width:100px) and (max-width: 480px) {
 
   .cookie {
-    padding: 20px;
+    text-align: start;
+    background-color: lightgray;
+    display: inline-block;
+    padding: 5px;
   }
 
   .page-header {
