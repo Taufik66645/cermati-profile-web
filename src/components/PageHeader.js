@@ -8,9 +8,9 @@ const BoxCookie = posed.div({
     y: 0
   },
   hide: {
-    y: -70,
+    y: -190,
     transition: {
-      duration: 500
+      duration: 1000
     }
   }
 });

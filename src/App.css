@@ -31,16 +31,19 @@ body {
 
 .page-header {
   background-image: url('./assets/work-desk__dustin-lee.jpg');
-  height: 75vh;
+  height: 105vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 150px;
+  margin-bottom: 10px;
 }
 
 .logo {
+  color: lightgray;
   width: 50px;
   position: absolute;
-  top: 80px;
+  top: 200px;
   left: 15px;
 
 }
@@ -80,7 +83,7 @@ body {
 
 .help {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .grid {
@@ -178,11 +181,17 @@ body {
     text-align: start;
     background-color: lightgray;
     display: inline-block;
-    padding: 5px;
+    margin-bottom: -20px;
+    padding: 10px;
   }
 
   .page-header {
     width: 100%;
+    padding-top: 150px;
+  }
+
+  .logo {
+    margin-top: 80px;
   }
 
   .grid {
@@ -190,12 +199,12 @@ body {
   }
 
   .help {
-    margin: 30px 20px 10px 20px
+    margin: 5px 20px 10px 20px
   }
 
   .newsletter {
     width: 335px;
-    bottom: 48px;
+    bottom: 0px;
   }
 
   .btn-news {
