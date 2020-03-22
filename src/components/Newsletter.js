@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Animated } from "react-animated-css";
 
 export class Newsletter extends Component {
   constructor(props) {
@@ -41,11 +42,13 @@ export class Newsletter extends Component {
 
   render() {
     return (
-      <div>
-        <Newsletter>
-          {this.state.newsletter === true && this.newsletterSec()}
-        </Newsletter>
-      </div>
+      <Animated animationIn="slideInUp" >
+        <div>
+          <newsletter>
+            {this.state.newsletter === true && this.newsletterSec()}
+          </newsletter>
+        </div>
+      </Animated>
     );
   }
 }

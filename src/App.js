@@ -5,6 +5,9 @@ import CookieSection from ".//components/cookieSection";
 import PageHeader from "./components/PageHeader";
 import Highlight from "./components/Highlight";
 
+import Footer from "./components/Footer";
+
+// import Test from "./components/test";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <CookieSection />
       <PageHeader />
       <Highlight />
+      <Footer />
+
+      {/* <Test /> */}
     </div>
   );
 }

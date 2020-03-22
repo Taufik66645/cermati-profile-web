@@ -10,7 +10,6 @@ body {
   align-items: center;
   position: fixed;
   width: 100%;
-
 }
 
 .link {
@@ -49,7 +48,10 @@ body {
 .hello {
   color: white;
   text-align: center;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
+
 
 .btn {
   background-color: transparent;
@@ -70,6 +72,10 @@ body {
   background-color: lightgrey;
   height: 100vh;
 
+}
+
+.span-sec {
+  margin-bottom: 0;
 }
 
 .help {
@@ -95,18 +101,18 @@ body {
 .card:hover {
   background-color: black;
   color: azure;
-
-
 }
 
 .footer {
   background-color: black;
-  color: white;
-  height: 10vh;
   display: flex;
   justify-content: center;
+  width: 100%;
+  color: white;
+  height: 10vh;
   align-items: center;
-  bottom: 0
+  bottom: 0;
+
 }
 
 .newsletter {
@@ -116,9 +122,9 @@ body {
   color: white;
   width: 500px;
   padding: 20px;
-  margin-top: -220px
+  margin-top: -20px;
+  margin-left: 10px;
 }
-
 
 
 .close-news {
@@ -170,9 +176,13 @@ body {
 
   .newsletter {
     width: 335px;
-    margin-bottom: 0;
+    bottom: -48px;
   }
 
+
+  .footer {
+    display: none;
+  }
 }
 
 @media (min-width:480px) and (max-width: 960px) {
@@ -184,8 +194,8 @@ body {
     grid-template-columns: repeat(2, 3fr);
   }
 
-  .newsletter {
-    margin-left: 0;
+  .footer {
+    display: none;
   }
 }
 
