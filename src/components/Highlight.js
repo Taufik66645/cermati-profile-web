@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import Newsletter from "./Newsletter";
 
-import { FaRegComments, FaPaintBrush, FaChartLine, FaStream, FaBoxes, FaRegHandshake} from "react-icons/fa";
+import {
+  FaRegComments,
+  FaPaintBrush,
+  FaChartLine,
+  FaStream,
+  FaBoxes,
+  FaRegHandshake
+} from "react-icons/fa";
 
 export class Highlight extends Component {
   render() {
@@ -20,8 +27,8 @@ export class Highlight extends Component {
         </div>
         <div className="grid">
           <div className="card">
-            <FaRegComments className="icon"/>
-            <h3>Consult</h3>
+            <FaRegComments className="icon" />
+            <h3 className="card-title">Consult</h3>
             <p>
               Co-create, design thinking; strengthen infrastructure resist
               granular. Revolution circular, movements or framework social
@@ -30,8 +37,8 @@ export class Highlight extends Component {
             </p>
           </div>
           <div className="card">
-            <FaPaintBrush className="icon"/>
-            <h3>Design</h3>
+            <FaPaintBrush className="icon" />
+            <h3 className="card-title">Design</h3>
             <p>
               Policymaker collaborates collective impact humanitarian shared
               value vocabulary inspire issue outcomes agile. Overcome injustice
@@ -40,8 +47,8 @@ export class Highlight extends Component {
             </p>
           </div>
           <div className="card">
-            <FaBoxes className="icon"/>
-            <h3>Develop</h3>
+            <FaBoxes className="icon" />
+            <h3 className="card-title">Develop</h3>
             <p>
               Revolutionary circular, movements a or impact framework social
               impact low- hanging. Save the compelling revolutionary inspire
@@ -50,8 +57,8 @@ export class Highlight extends Component {
             </p>
           </div>
           <div className="card">
-            <FaRegHandshake className="icon"/>
-            <h3>Marketing</h3>
+            <FaRegHandshake className="icon" />
+            <h3 className="card-title">Marketing</h3>
             <p>
               Peaceful; vibrant paradigm, collaborative cities. Shared
               vocabulary agile, replicable, effective altruism youth. Mobilize
@@ -60,8 +67,8 @@ export class Highlight extends Component {
             </p>
           </div>
           <div className="card">
-            <FaStream className="icon"/>
-            <h3>Manage</h3>
+            <FaStream className="icon" />
+            <h3 className="card-title">Manage</h3>
             <p>
               Change-makers innovation or shared unit of analysis. Overcome
               injustice outcomes strategize vibrant boots on the ground
@@ -70,8 +77,8 @@ export class Highlight extends Component {
             </p>
           </div>
           <div className="card">
-            <FaChartLine className="icon"/>
-            <h3>Evolve</h3>
+            <FaChartLine className="icon" />
+            <h3 className="card-title">Evolve</h3>
             <p>
               Activate catalyze and impact contextualize humanitarian. Unit of
               analysis overcome injustice storytelling altruism. Thought
@@ -80,8 +87,7 @@ export class Highlight extends Component {
             </p>
           </div>
         </div>
-      <Newsletter />
-
+        <Newsletter />
       </div>
     );
   }

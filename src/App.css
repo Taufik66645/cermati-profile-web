@@ -80,7 +80,7 @@ body {
 
 .help {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .grid {
@@ -90,6 +90,20 @@ body {
   grid-gap: 2rem;
   margin: 100px 50px 30px 50px;
 
+}
+
+.icon {
+  float: right;
+
+}
+
+.icon {
+
+  display: inline;
+}
+
+.card-title {
+  display: inline;
 }
 
 .card {
@@ -104,16 +118,18 @@ body {
 }
 
 .footer {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  color: white;
-  height: 10vh;
-  align-items: center;
+  left: 0;
   bottom: 0;
-
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .newsletter {
   position: relative;
@@ -179,7 +195,11 @@ body {
 
   .newsletter {
     width: 335px;
-    bottom: -48px;
+    bottom: 48px;
+  }
+
+  .btn-news {
+    width: 100px;
   }
 
 
@@ -202,8 +222,9 @@ body {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1290px) {
   .grid {
     grid-template-columns: repeat(3, 2fr);
   }
+
 }

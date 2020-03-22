@@ -1,24 +1,41 @@
 import React, { Component } from "react";
 import { Animated } from "react-animated-css";
+import posed from "react-pose";
 
-export class Newsletter extends Component {
+const BoxCookie = posed.div({
+  show: {
+    y: 0
+  },
+  hide: {
+    x: -900,
+    transition: {
+      duration: 1000
+    }
+  }
+});
+
+export default class CookieDialog extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      newsletter: true
+      current_pose: "show"
     };
   }
-  btnClose = () => {
+
+  buttonClicked = e => {
     this.setState({
-      newsletter: false
+      current_pose: "hide"
     });
   };
 
-  newsletterSec = () => {
+  render() {
     return (
+      <Animated animationIn="slideInUp" >
+      <BoxCookie pose={this.state.current_pose} className={"dialog-gede"}>
       <div>
         <form className="newsletter">
-          <p className="close-news" onClick={this.btnClose}>
+          <p className="close-news" onClick={this.buttonClicked}>
             x
           </p>
           <h2>Get latest updates in web technologies</h2>
@@ -37,19 +54,11 @@ export class Newsletter extends Component {
           </span>
         </form>
       </div>
-    );
-  };
-
-  render() {
-    return (
-      <Animated animationIn="slideInUp" >
-        <div>
-          <newsletter>
-            {this.state.newsletter === true && this.newsletterSec()}
-          </newsletter>
-        </div>
+      </BoxCookie>
       </Animated>
     );
   }
 }
-export default Newsletter;
+
+
+
